@@ -2,6 +2,7 @@ import "./App.css";
 import Accordion from "./components/Accordion";
 import Navbar from "./components/Navbar";
 import BottomBar from "./components/BottomBar";
+import NavMini from "./components/NavMini";
 
 const items = [
   {
@@ -24,15 +25,33 @@ const items = [
   },
 ];
 
+const about = [
+  {
+    title: "About",
+    content:
+      "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor ",
+  },
+  {
+    title: "Contact",
+    content:
+      "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor ",
+  },
+];
+
 function App() {
   return (
     <>
-      <div className="w-full min-h-screen bg-white flex flex-col lg:flex-row">
-        <div className="w-full min-h-screen bg-white flex items-start justify-start ">
+      <div className="w-full min-h-screen bg-white flex flex-col">
+        <div className="w-full flex-1">
           <Accordion items={items} />
         </div>
-        <Navbar />
-        <BottomBar />
+        <div className="w-full bg-black text-white bottom-0 p-[0.45%] max-780:block hidden">
+          <NavMini about={about} />
+        </div>
+        <div className="fixed bottom-0 w-full max-780:hidden ">
+          <BottomBar />
+        </div>
+        <Navbar className="lg:hidden" />
       </div>
     </>
   );

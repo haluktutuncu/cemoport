@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "max-780": { max: "780px" }, // 740px altı için özel sınıf
+        "max-1024": { max: "1024px" }, // 1024px altı için özel sınıf
+      },
       keyframes: {
         "shake-horizontal": {
           "0%, 90%": { transform: " skew(5deg) scale(1, 1.2)" },

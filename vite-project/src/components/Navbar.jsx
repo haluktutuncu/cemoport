@@ -21,8 +21,8 @@ export default function Navbar({ className }) {
   };
 
   return (
-    <div className="divide-x-2 divide-slate-950 w-[30px] lg:w-[50px] ">
-      <div className="flex top-0 fixed h-[50%] right-0 flex-col justify-center items-center border-stone-950 bg-slate-50 border-l-2 z-50 divide-y-2 divide-stone-950 cursor-pointer ">
+    <div className="divide-x-2 divide-slate-950  max-780:hidden ">
+      <div className="flex top-0  fixed h-[50%] right-0 flex-col justify-center items-center border-stone-950 bg-slate-50 border-l-2 z-50 divide-y-2 divide-stone-950 cursor-pointer ">
         <div
           className={`w-full h-full text-[4vw] lg:text-[3.5vmin] leading-[1] font-regular transform justify-center items-center flex  border-stone-950 divide-x-2 divide-slate-950 ${
             isOpen2 ? "border-b-0" : ""
