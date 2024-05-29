@@ -14,7 +14,7 @@ const AccordionItem = forwardRef(
           <span className="text-[6.5vmax] md:text-[6.5vmax] lg:text-[5vmax] leading-[0.72]  text-left font-regular transform inline-block hover:animate-shake-horizontal scale-custom items-center line">
             {title}
           </span>
-          <span className="self-end text-[5vw] lg:text-[3.0vmax] leading-[1.4] lg:leading-[1.2]  font-regular lg:pr-16 md:pr-20 max-780:pr-4 scale-custom max-780:hidden">
+          <span className="self-end text-[5vw] lg:text-[3.0vmax] leading-[1.4] lg:leading-[1.2]  font-regular lg:pr-16 md:pr-20 min-[1800px]:pr-20 max-780:pr-4 scale-custom max-780:hidden">
             {date}
           </span>
         </button>
