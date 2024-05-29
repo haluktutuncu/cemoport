@@ -3,6 +3,7 @@ import Accordion from "./components/Accordion";
 import Navbar from "./components/Navbar";
 import BottomBar from "./components/BottomBar";
 import NavMini from "./components/NavMini";
+import DownloadBtn from "./components/DownloadBtn";
 
 const items = [
   {
@@ -47,6 +48,7 @@ function App() {
         </div>
         <div className="w-full bg-black text-white bottom-0 p-[0.45%] max-780:block hidden">
           <NavMini about={about} />
+          <DownloadBtn />
         </div>
         <div className="fixed bottom-0 w-full max-780:hidden ">
           <BottomBar />

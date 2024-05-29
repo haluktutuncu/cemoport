@@ -28,12 +28,10 @@ export default function Navbar({ className }) {
             isOpen2 ? "border-b-0" : ""
           } 
           ${isOpen ? "border-b-2" : ""} text-center cursor-pointer`}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
-          <a
-            onClick={toggleOpen}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
+          <a onClick={toggleOpen}>
             <div className="scale-custom p-3">
               {isOpen && isHovered ? (
                 <a>
@@ -47,9 +45,9 @@ export default function Navbar({ className }) {
             </div>
           </a>
           {isOpen && (
-            <div className="w-[70rem] h-full overflow-auto scroll-smooth hide-scrollbar">
-              <div className=" text-left p-3 pt-10 flex flex-col space-y-5 text-[2.2vmax] tracking-tighter leading-[1.4] ">
-                <span className="font-regular">
+            <div className="w-[35rem]  md:w-[45rem] lg:w-[60rem] h-full overflow-auto scroll-smooth hide-scrollbar">
+              <div className=" text-left p-3 pt-30 flex flex-col space-y-5 text-[2.5vmax] md:[2.2vmax] tracking-tighter leading-[1.4]  ">
+                <span className="font-regular scale-custom py-16 ">
                   Wir sind YRD.Works Yacin Boudalfa, Ruben Fischer und David
                   Bausch. Wir kennen uns seit unserer Jugend und arbeiten seit
                   2015 an eigenständig initiierten Projekten und Auftragswerken
@@ -60,7 +58,7 @@ export default function Navbar({ className }) {
                   Skulptur und Aktion. Für uns ist es wichtig, unsere
                   architektonischen Interventionen nicht losgelöst von den
                 </span>
-                <span className="font-regular">
+                <span className="font-regular scale-custom pb-16">
                   Wir sind YRD.Works Yacin Boudalfa, Ruben Fischer und David
                   Bausch. Wir kennen uns seit unserer Jugend und arbeiten seit
                   2015 an eigenständig initiierten Projekten und Auftragswerken
@@ -71,7 +69,7 @@ export default function Navbar({ className }) {
                   Skulptur und Aktion. Für uns ist es wichtig, unsere
                   architektonischen Interventionen nicht losgelöst von den
                 </span>
-                <span className="font-regular">
+                <span className="font-regular scale-custom pb-16">
                   Wir sind YRD.Works Yacin Boudalfa, Ruben Fischer und David
                   Bausch. Wir kennen uns seit unserer Jugend und arbeiten seit
                   2015 an eigenständig initiierten Projekten und Auftragswerken
@@ -89,15 +87,13 @@ export default function Navbar({ className }) {
       </div>
       <div className="flex bottom-0 h-[50%] fixed right-0 flex-col justify-center items-center border-stone-950 bg-slate-50  border-l-2 z-50  divide-y-2 divide-stone-950 cursor-pointer">
         <div
-          className={`w-full h-full text-[4vw] lg:text-[3.5vmin] leading-[1] font-regular transform justify-center items-center flex border-t-2  border-stone-950 divide-x-2 divide-slate-950 ${
-            isOpen ? "border-t-0" : ""
+          className={`w-full h-full text-[4vw] lg:text-[3.5vmin] leading-[1] font-regular transform justify-center items-center flex   border-stone-950 divide-x-2 divide-slate-950 ${
+            isOpen ? "border-t-0" : "border-t-2"
           } text-center cursor-pointer`}
+          onMouseEnter={() => setIsHovered2(true)}
+          onMouseLeave={() => setIsHovered2(false)}
         >
-          <a
-            onClick={toggleOpen2}
-            onMouseEnter={() => setIsHovered2(true)}
-            onMouseLeave={() => setIsHovered2(false)}
-          >
+          <a onClick={toggleOpen2}>
             <div className="scale-custom p-3">
               {isOpen2 && isHovered2 ? (
                 <a>
@@ -112,30 +108,8 @@ export default function Navbar({ className }) {
           </a>
           {isOpen2 && (
             <div className="w-[35rem] h-full overflow-auto scroll-smooth hide-scrollbar">
-              <div className=" text-left p-3 pt-10 flex flex-col space-y-5 text-[2.2vmax] tracking-tighter leading-[1.4] ">
-                <span className="font-regular">
-                  Wir sind YRD.Works Yacin Boudalfa, Ruben Fischer und David
-                  Bausch. Wir kennen uns seit unserer Jugend und arbeiten seit
-                  2015 an eigenständig initiierten Projekten und Auftragswerken
-                  für Kulturinstitutionen oder den öffentlichen Raum. Bei
-                  unserer Arbeit interessieren uns besonders temporäre Räume und
-                  deren soziale Funktion. Wir schaffen kurzfristige
-                  Begegnungsorte und forschen an der Schnittstelle von Raum,
-                  Skulptur und Aktion. Für uns ist es wichtig, unsere
-                  architektonischen Interventionen nicht losgelöst von den
-                </span>
-                <span className="font-regular">
-                  Wir sind YRD.Works Yacin Boudalfa, Ruben Fischer und David
-                  Bausch. Wir kennen uns seit unserer Jugend und arbeiten seit
-                  2015 an eigenständig initiierten Projekten und Auftragswerken
-                  für Kulturinstitutionen oder den öffentlichen Raum. Bei
-                  unserer Arbeit interessieren uns besonders temporäre Räume und
-                  deren soziale Funktion. Wir schaffen kurzfristige
-                  Begegnungsorte und forschen an der Schnittstelle von Raum,
-                  Skulptur und Aktion. Für uns ist es wichtig, unsere
-                  architektonischen Interventionen nicht losgelöst von den
-                </span>
-                <span className="font-regular">
+              <div className=" text-left p-3 pt-10 flex flex-col space-y-5 text-[2.2vmax] md:text-[2vmax]  tracking-tighter leading-[1.4] ">
+                <span className="font-regular scale-custom pb-16 pt-8 ">
                   Wir sind YRD.Works Yacin Boudalfa, Ruben Fischer und David
                   Bausch. Wir kennen uns seit unserer Jugend und arbeiten seit
                   2015 an eigenständig initiierten Projekten und Auftragswerken

@@ -31,7 +31,7 @@ const Accordion = ({ items }) => {
   };
 
   return (
-    <div className="w-full ">
+    <div className="w-full mb-20 ">
       {items.map((item, index) => (
         <AccordionItem
           key={index}
